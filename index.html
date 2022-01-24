@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagens/logo.png">
+    <title>FOOD SHARING</title>
+</head>
+<body>
+    <header id="indexHeader">
+        <div id="titulo" class="row">
+            <img id="logo" src="imagens/logo.png"><a id="site">FOOD SHARING</a>
+        </div>
+    </header>
+    <main>
+        <div id="forms">
+            <div id="login">
+                <form action="php/entrada.php" method="POST" class="row">
+                    <h1>LOGIN</h1>
+                    <p><input id="nome" name="nome" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" type="text" placeholder="Nome"></p>
+                    <p><input id="senha" name="senha" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" type="password" placeholder="Password"></p>
+                    <input type="submit" value="ENTRAR">
+                    <p id="alink">Ainda não tem conta? <a id="link" href="html/registo.html">Clique aqui</a> para se registar!</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="footer">&copy;Trabalho realizado por: Marcos Facha e Rodrigo Mendes</p>
+    </footer>
+</body>
+</html>
+<style>
+input[type="submit"] {
+  width: 80px;
+  height: 25px;
+  border: none;
+  background-image: linear-gradient(rgb(58, 121, 216), rgb(27, 53, 92));
+  padding-top: 5px;
+  color: white;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px;
+}
+input[type="submit"]:hover {
+  background: rgb(58, 121, 216);
+}
+</style>
