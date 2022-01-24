@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../imagens/logo.png">
+    <title>FOOD SHARING</title>
+</head>
+<body>
+    <header id="registaHeader">
+        <div id="titulo" class="row">
+            <img id="logo" src="../imagens/logo.png"><a id="site">FOOD SHARING</a>
+        </div>
+    </header>
+    <main>
+        <div id="forms" >
+            <div id="registar" class="row">
+                <form action="../php/regista.php" method="POST">
+                    <h1>REGISTE-SE</h1>
+                    <p><input id="nome" name="nome" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" type="text" placeholder="Nome"></p>
+                    <p><input id="nif" name="nif" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" type="text" minlength="9" maxlength="9" placeholder="NIF"></p>
+                    <p><input id="email" name="email" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" type="email" placeholder="Email"></p>
+                    <p><input id="senha" name="senha" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" type="password" placeholder="Password"></p>                    
+                    <!-- <button id="botao" type="submit">REGISTAR</button> -->
+                    <input type="submit" value="REGISTAR">
+                    <p id="alink">Já tem conta? <a id="link" href="../index.html">Clique aqui</a> para entrar!</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="footer">&copy;Trabalho realizado por: Marcos Facha e Rodrigo Mendes</p>
+    </footer>
+</body>
+</html>
+<style>
+input[type="submit"] {
+  width: 80px;
+  height: 25px;
+  border: none;
+  background-image: linear-gradient(rgb(58, 121, 216), rgb(27, 53, 92));
+  padding-top: 5px;
+  color: white;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+}
+input[type="submit"]:hover {
+  background: rgb(58, 121, 216);
+}
+</style>
